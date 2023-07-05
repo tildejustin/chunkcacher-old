@@ -15,7 +15,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.12.2",
-    "minecraft": ">=1.14 <=1.15.2",
+    "minecraft": ">=1.13 <=1.13.2",
     "atum": "*"
   },
   "breaks": {

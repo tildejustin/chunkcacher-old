@@ -16,10 +16,10 @@ import java.util.Map;
 public class WorldCache {
     public static boolean isGenerating = false;
     private static LevelInfo lastGeneratorOptions;
-    private static final Map<DimensionType, Long2ObjectLinkedOpenHashMap<CompoundTag>> cache = new HashMap<>();
+    private static final Map<DimensionType, Long2ObjectLinkedOpenHashMap<Compi>> cache = new HashMap<>();
 
     public static void addChunk(ChunkPos chunkPos, Chunk chunk, ServerWorld world) {
-        cache.computeIfAbsent(world.getDimension().getType(), k -> new Long2ObjectLinkedOpenHashMap<>()).put(chunkPos.toLong(), ChunkSerializer.serialize(world, chunk));
+        cache.computeIfAbsent(world.method_16393().method_11789(), k -> new Long2ObjectLinkedOpenHashMap<>()).put(chunkPos.toLong(), ChunkSerializer.serialize(world, chunk));
     }
 
     public static boolean shouldCache() {
