@@ -43,7 +43,7 @@ public class WorldCache {
         if (lastGeneratorOptions == null ||
                 lastGeneratorOptions.getSeed() != generatorOptions.getSeed() ||
                 lastGeneratorOptions.hasStructures() != generatorOptions.hasStructures() ||
-                lastGeneratorOptions.getGeneratorType() != generatorOptions.getGeneratorType()
+                lastGeneratorOptions.getGeneratorOptions() != generatorOptions.getGeneratorOptions()
         ) {
             clearCache();
             lastGeneratorOptions = generatorOptions;
