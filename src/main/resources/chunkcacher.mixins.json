@@ -4,11 +4,14 @@
   "package": "me.char321.chunkcacher.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ChunkSerializerMixin",
-    "MinecraftServerMixin",
-    "ThreadedAnvilChunkStorageMixin"
+    "ChunkMixin",
+    "ServerChunkProviderMixin",
+    "accessor.ChunkAccessor",
+    "accessor.ServerChunkProviderAccessor",
+    "accessor.ThreadedAnvilChunkStorageAccessor"
   ],
   "client": [
+    "IntegratedServerMixin",
     "TitleScreenMixin"
   ],
   "injectors": {
